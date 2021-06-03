@@ -1,0 +1,144 @@
+/*https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51*/
+
+:root {
+	--colorPrincipal: #2A9D8F;
+	--colorSecundario: #E9C46A;
+	--blanco: #ffffff;
+	--negro: #000000;
+	--fuentePrincipal: 'Ubuntu';
+	--fuenteHeader: 'Josefin Sans';
+}
+
+/*Utilidades*/
+
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/*Globales*/
+
+html{
+  box-sizing: border-box;
+  min-height: 100%;
+	font-size: 62.5%
+}
+
+body{
+	font-family: var(--fuentePrincipal);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h2{
+	font-size: 3rem;
+	text-align: center
+}
+
+h3{
+	font-size: 2rem;
+}
+
+a{
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--blanco);
+}
+
+p{
+	text-align: center;
+}
+
+/*header*/
+
+header h1{
+	text-align: center;
+	font-family: var(--fuenteHeader)
+}
+
+header span{
+	font-size: 2rem;
+}
+
+/*nav*/
+
+nav{
+	background-color: var(--colorSecundario);
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width:768px){
+	nav{
+	  flex-direction: row;
+    justify-content: space-around;
+	}
+}
+
+
+nav a{
+	padding: 1rem;
+}
+
+nav a:hover{
+	background-color: var(--colorPrincipal);
+	color: var(--negro)
+	
+}
+
+/*hero*/
+
+.hero {
+    height: 450px;
+    background-image: url(../img/hero.jpg);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.contenido-hero {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+	 color: var(--blanco)
+}
+/*main*/
+
+main p{
+	font-size: 2rem;
+}
+
+.shadow{
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+}
+}
+
+/*footer*/
+footer{
+	text-align: center;
+}
