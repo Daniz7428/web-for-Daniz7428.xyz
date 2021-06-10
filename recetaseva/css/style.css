@@ -79,7 +79,27 @@ nav{
     position: relative;
 }
 
+.hero--bio {
+    height: 450px;
+    background: url(../img/hero.png) no-repeat center center; 
+	  background-size: cover; 
+    margin-bottom: 2rem;
+    position: relative;
+}
+
 .contenido-hero {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+	 color: var(--blanco);
+}
+
+.contenido-hero--bio {
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
     width: 100%;
