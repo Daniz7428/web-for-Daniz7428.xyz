@@ -21,6 +21,11 @@ body{
 
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
 h2{
 	font-size: 3rem;
 }
